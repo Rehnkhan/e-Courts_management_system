@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    height: 15vh;
+    width: 100%;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    
+}
+#navbar p{
+    margin-right: 30px;
+    color: black;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+#navbar p:hover{
+    color: bisque;
+}
+#content{
+    width: 100vw;
+    height: 90vh;
+}
+#sidebar{
+    height: 100%;
+    width: 15%;
+    background-color: rgba(38, 38, 38, 0.256);
+    overflow: scroll;
+}
+#sidebar::-webkit-scrollbar{
+    display: none;
+}
+#sidebar div{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    background-color:beige;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#sidebar div img{
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+}
+#sidebar div p{
+    width: 100%;
+    height: 40px;
+    display: grid;
+    place-items: center;
+}
+#content{
+   display: flex;
+   box-sizing: border-box;
+}
+#maincontent{
+    width: 85%;
+}
+
+.column{
+    float: left;
+    width: 15.33%;
+    padding:5px;
+    margin: 20px;
+}
+.row::after{
+   content:"";
+   margin-right: 100px;
+   display:table;
+   clear:both;
+}
+
+#search_box{
+    margin: 10px;
+    background-color: rgba(250, 235, 215, 0.573);
+    border-radius: 5px;
+    
+}
+#search_nav{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.396);
+}
+#search_nav div{
+    width: 25%;
+    display: flex;
+    height: 100%;
+}
+.seleccted_c1{
+    background-color: rgba(240, 248, 255, 0.756);
+    color: black;
+}
+
+#cap{
+    display:grid;
+    background-color: aquamarine;
+    color: black;
+
+}
+#maincontent button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    background-color: forestgreen;
+    border-radius: 5px;
+    margin: 20px;
+    color: white;
+}
+#help{
+    width:100%;
+    margin: 10px;
+}
+#help p{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+#help .heplpdesk{
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 5px;
+    padding-left:10px ;
+}
+#help a{
+    text-decoration: none;
+}
+#help div{
+    border: 2px solid grey;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+#help div p{
+    border-bottom:2px solid grey ;}
+
+#radion{
+    height: 15vh;
+    width: 100%;
+    background-color:darkslategrey;
+    display: grid;
+    margin: 15px;
+    border-radius: 5px;
+    place-items:center;
+    align-items: center;
+}
+#maincontent h3{
+    text-align: center;
+    background-color: rgba(44, 75, 75, 0.522);
+    color:black;
+    display: grid;
+    margin: 15px;
+    border-radius: 5px;
+}
+#search_result p{
+    font-size: medium;
+
+}
+#party{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.548);
+    backdrop-filter: blur(5px);
+}
+#party div{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+#case{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.548);
+    backdrop-filter: blur(5px);
+}
+#case div{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+#court{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.548);
+    backdrop-filter: blur(5px);
+}
+#court div{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+#lawyer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.548);
+    backdrop-filter: blur(5px);
+}
+#lawyer div{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}

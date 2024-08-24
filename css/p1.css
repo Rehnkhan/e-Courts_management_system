@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    height: 10vh;
+    width: 100%;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    
+}
+#navbar p{
+    margin-right: 30px;
+    color: black;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+#navbar p:hover{
+    color: bisque;
+}
+#content{
+    width: 100vw;
+    height: 90vh;
+}
+#sidebar{
+    height: 100%;
+    width: 15%;
+    background-color: rgba(38, 38, 38, 0.256);
+    overflow: scroll;
+}
+#sidebar::-webkit-scrollbar{
+    display: none;
+}
+#sidebar div{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#sidebar div img{
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+}
+#sidebar div p{
+    width: 100%;
+    height: 40px;
+    display: grid;
+    place-items: center;
+}
+#content{
+   display: flex;
+   box-sizing: border-box;
+}
+#maincontent{
+    width: 85%;
+}
+
+.column{
+    float: left;
+    width: 15.33%;
+    padding:5px;
+    margin: 20px;
+}
+.row::after{
+   content:"";
+   margin-right: 100px;
+   display:table;
+   clear:both;
+}
+.box{
+    height: 15vh;
+    width: 100%;
+    background-color:darkslategrey;
+    display: grid;
+    margin: 15px;
+    border-radius: 5px;
+    place-items:center;
+    align-items: center;
+}
+#captcha_form{
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: black;
+    margin:10px;
+    border-radius: 5px;
+    background-image: url(./images/Screenshot\ 2024-02-06\ 203153.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#captcha_form div{
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 5px;
+    color: white;
+    width: 30%;
+    height: 70%;
+}
+
+#captcha_form div p{
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 10px;
+}
+#captcha_form div input{
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 30px;
+}
+
+#refresh{
+    display: flex;
+}
+#captcha_form button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    background-color: forestgreen;
+    border-radius: 5px;
+    margin: 20px;
+    color: white;
+}
+#captcha_form {
+    background-color: grey;
+    color: black;
+}
+#help{
+    width:100%;
+    margin: 10px;
+}
+#help p{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+#help .heplpdesk{
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 5px;
+    padding-left:10px ;
+}
+#help a{
+    text-decoration: none;
+}
+#help div{
+    border: 2px solid grey;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+#help div p{
+    border-bottom:2px solid grey ;
+}
+#sm{
+    text-align: center;
+    text-decoration: black;
+    font-style: normal;
+}
+
+#havgolla{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.548);
+    backdrop-filter: blur(5px);
+}
+#havgolla div{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 1px;
+}

@@ -1,0 +1,75 @@
+<div id="search_box">
+    <div id="search_nav">
+        <div onclick="change_inner_content(1,this)" class="seleccted_c1"><img
+                src="images/Group-Vector-PNG-Clipart.png" alt="" height="25px">
+            <p>Party Name</p>
+        </div>
+        <div onclick="change_inner_content(2,this)"><img src="images/Screenshot 2024-02-06 203134.png"
+                alt="" height="25px">
+            <p>Case status</p>
+        </div>
+        <div onclick="change_inner_content(3,this)" class=""><img
+                src="images/Screenshot 2024-02-06 203056.png" alt="" height="25px">
+            <p>Court orders</p>
+        </div>
+        <div onclick="change_inner_content(4,this)" class="x"><img src="images/Group-Vector-PNG-Clipart.png"
+                alt="" height="25px">
+            <p>Advocate</p>
+        </div>
+    </div>
+    <div id="search_result">
+        <p>Case status:search by party name</p><br>
+        <p> </p>
+        <div>
+            <p>Party Name</p>
+            <input type="text" name="cino1" id="cino1" required><br>
+            <button onclick="get_pdetails()">GO</button>
+            <button>Reset</button>
+
+
+        </div>
+        <!-- <p>Case details</p>
+        <p></p>
+        <div>
+            <p>Enter case number</p>
+            <input type="text" name="cino2" id="cino2" required><br>
+            <div>
+                <button onclick="get_cdetails()">GO</button>
+                <button>Reset</button>
+            </div>
+        </div>
+        <div>
+            <p>Fetch Case Details by Party Name and Registration Year</p>
+            <p>Party Name</p>
+            <input type="text" name="cino3" id="cino3" required><br>
+            <p>Filing date</p>
+            <input type="text" required>
+
+            <button onclick="get_courtdetails()">GO</button>
+            <button>Reset</button>
+
+        </div>
+        <div>
+            <p>Lawyer Details</p>
+            <p>Enter LawyerID</p>
+            <input type="text" name="cino4" id="cino4" required><br>
+            <div>
+                <button onclick="get_ldetails()">GO</button>
+                <button>Reset</button>
+            </div>
+        </div> -->
+    </div>
+    
+</div>
+<div id="help">
+    <p class="heplpdesk">Help Desk</p>
+    <div>
+        <p>Enter at least 3 characters</p>
+        <p>Party Name maybe the name of the Petitioner, Plaintiff, Complainant, Respondent, Defendant,
+            Appellant, Accused or Extra Party.
+        </p>
+        <p>In the Year box, enter the Case Registration Year.</p>
+        <p>Click on the Go button, to get the Oders/Judgements of the cases satisfying the search criteria.
+        </p>
+    </div>
+</div>

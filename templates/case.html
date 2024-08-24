@@ -1,0 +1,226 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Court Orders</title>
+    <link rel="stylesheet"  type="text/css" href="css//c1.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <p> </p>
+            <img src="images/Screenshot 2024-02-06 192442.png" alt="eCourt India Services" height="70px" width="300px" />
+            <img src="images/ecourts-logo.png" alt="" height="50px" width="50px" />
+            <p></p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p onclick="navigate(1)">Home</p>
+            <p onclick="navigate(2)">e-committe</p>
+            <p onclick="navigate(3)">Supreme courts</p>
+            <p onclick="navigate(4)">high courts</p>
+            <p onclick="navigate(5)">District courts</p>
+            <p onclick="navigate(6)">NJDG</p>
+            <p onclick="navigate(7)">Contact us</p>
+        </div>
+    </header>
+    <main>
+
+    
+    <div id="content">
+        <div id="sidebar">
+            <p id="sm">Search Menu</p>
+            <div><img src="images/Screenshot 2024-02-06 203153.png" alt="">
+                <!-- <p onclick="navigate(11)">CNR number</p> -->
+                <a href="/"> CNR number</a>
+            </div>
+            <div><img src="images/Screenshot 2024-02-06 203134.png" alt="">
+                <!-- <p onclick="navigate(12)">Case status</p> -->
+                <a href="/case">Case status</a>
+            </div>
+            <div><img src="images/Screenshot 2024-02-06 203056.png" alt="">
+                <!-- <p onclick="navigate(9)">Court orders</p> -->
+                <a href="/c1"> Court orders</a>
+            </div>
+            <div> <img src="images/OIP.jpg" alt="">
+                <!-- <p onclick="navigate(15)">Location</p> -->
+                <a href="/location"> Location</a>
+            </div>
+        </div>
+        <div id="maincontent">
+
+            <h3>Case Status</h3>
+            <div id="radion">
+                <select name="state" style="height: 35px;">
+                    <option value="">--SELECT STATE--</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+                <select name="district" style="height: 35px;">
+                    <option value="">--SELECT DISTRICT--</option>
+                    <option value="Bagalkot">Bagalkot</option>
+                    <option value="Ballari">Ballari (Bellary)</option>
+                    <option value="Belagavi">Belagavi </option>
+                    <option value="Bengaluru Rural">Bengaluru Rural</option>
+                    <option value="Bengaluru Urban">Bengaluru Urban</option>
+                    <option value="Bidar">Bidar</option>
+                    <option value="Chamarajanagar">Chamarajanagar</option>
+                    <option value="Chikballapur">Chikballapur</option>
+                    <option value="Chikkamagaluru">Chikkamagaluru</option>
+                    <option value="Chitradurga">Chitradurga</option>
+                    <option value="Dakshina Kannada">Dakshina Kannada</option>
+                    <option value="Davangere">Davangere</option>
+                    <option value="Dharwad">Dharwad</option>
+                    <option value="Gadag">Gadag</option>
+                    <option value="Hassan">Hassan</option>
+                    <option value="Haveri">Haveri</option>
+                    <option value="Kalaburagi">Kalaburagi (Gulbarga)</option>
+                    <option value="Kodagu">Kodagu</option>
+                    <option value="Kolar">Kolar</option>
+                    <option value="Koppal">Koppal</option>
+                    <option value="Mandya">Mandya</option>
+                    <option value="Mysore">Mysore</option>
+                    <option value="Raichur">Raichur</option>
+                    <option value="Ramanagara">Ramanagara</option>
+                    <option value="Shimoga">Shimoga</option>
+                    <option value="Tumkur">Tumkur</option>
+                    <option value="Udupi">Udupi</option>
+                    <option value="Uttara Kannada">Uttara Kannada</option>
+                    <option value="Vijayapura (Bijapur)">Vijayapura (Bijapur)</option>
+                    <option value="Yadgir">Yadgir</option>
+                </select>
+
+                <select name="" style="height: 35px;">
+                    <option value="">--SELECT COURT COMPLEX--</option>
+                    <option value="1030101@5,23@Y">Court Complex-Hosanagar</option>
+                    <option value="1030102@7,8@Y">Court Complex- Sorab</option>
+                    <option value="1030103@10,11,12,13@Y">Court Complex-Sagar</option>
+                    <option value="1030104@14,15,18@Y">Court Complex-Bhadravati</option>
+                    <option value="1030105@9,20@Y">Court Complex- Thirthahalli</option>
+                    <option value="1030106@6,22@Y">Court Complex- Shikaripura</option>
+                    <option value="1030107@1,2,3,4,17,19,21@Y">District Court Complex-Shimoga</option>
+                </select> <!--fillCauseList()-->
+
+            </div>
+            <div id="search_box">
+                <div id="search_nav">
+                    <div onclick="change_inner_content(1,this)" class="seleccted_c1"><img
+                            src="images/Group-Vector-PNG-Clipart.png" alt="" height="25px">
+                        <p>Party Name</p>
+                    </div>
+                    <div onclick="change_inner_content(2,this)"><img src="images/Screenshot 2024-02-06 203134.png"
+                            alt="" height="25px">
+                        <p>Case status</p>
+                    </div>
+                    <div onclick="change_inner_content(3,this)" class=""><img
+                            src="images/Screenshot 2024-02-06 203056.png" alt="" height="25px">
+                        <p>Court orders</p>
+                    </div>
+                    <div onclick="change_inner_content(4,this)" class="x"><img src="images/Group-Vector-PNG-Clipart.png"
+                            alt="" height="25px">
+                        <p>Advocate</p>
+                    </div>
+                </div>
+                <div id="search_result">
+                    <p>Case status:search by party name</p><br>
+                    <p> </p>
+                    <div>
+                        <p>Party Name</p>
+                        <input type="text" name="cino1" id="cino1" required><br>
+                        <button onclick="get_pdetails()">GO</button>
+                        <button>Reset</button>
+
+
+                    </div>
+                    <!-- <p>Case details</p>
+                    <p></p>
+                    <div>
+                        <p>Enter case number</p>
+                        <input type="text" name="cino2" id="cino2" required><br>
+                        <div>
+                            <button onclick="get_cdetails()">GO</button>
+                            <button>Reset</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Fetch Case Details by Party Name and Registration Year</p>
+                        <p>Party Name</p>
+                        <input type="text" name="cino3" id="cino3" required><br>
+                        <p>Filing date</p>
+                        <input type="text" required>
+
+                        <button onclick="get_courtdetails()">GO</button>
+                        <button>Reset</button>
+
+                    </div>
+                    <div>
+                        <p>Lawyer Details</p>
+                        <p>Enter LawyerID</p>
+                        <input type="text" name="cino4" id="cino4" required><br>
+                        <div>
+                            <button onclick="get_ldetails()">GO</button>
+                            <button>Reset</button>
+                        </div>
+                    </div> -->
+                </div>
+                
+            </div>
+            <div id="help">
+                <p class="heplpdesk">Help Desk</p>
+                <div>
+                    <p>Enter at least 3 characters</p>
+                    <p>Party Name maybe the name of the Petitioner, Plaintiff, Complainant, Respondent, Defendant,
+                        Appellant, Accused or Extra Party.
+                    </p>
+                    <p>In the Year box, enter the Case Registration Year.</p>
+                    <p>Click on the Go button, to get the Oders/Judgements of the cases satisfying the search criteria.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        </div>
+        
+        <footer>
+            
+        </footer>
+        <div id="footer">
+        <script type="application/javascript" src="/p1.js"></script>
+        <script type="application/javascript" src="/case.js"></script>
+</body>
+
+</html>
