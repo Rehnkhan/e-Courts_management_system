@@ -27,10 +27,10 @@ app.use(cors({
     origin:'*'
 }))
 app.use(ex.urlencoded({extended:true}))
-app.use(ex.json({limit:'50mb'}))
+app.use(ex.json())
 app.use(bodyParser.json({limit:'50mb'}))
 app.use(ex.static(__dirname))
-app.get('/',(req,res)=>{
+app.get('/p1',(req,res)=>{
     res.sendFile(`${__dirname}/templates/p1.html`)
 })
 
@@ -53,34 +53,33 @@ app.post('/login',image.single('pic'),async (req,res)=>{
     res.send('success')
 })
 
-app.get('/pu',(req,res)=>{
+app.get('/p',(req,res)=>{
     res.sendFile(__dirname+'/templates/index.html')
 })
 
-app.get('/case', (req, res) => {
-    res.sendFile(__dirname + '/templates/case.html');
-  });
+// app.get('/case', (req, res) => {
+//     res.sendFile(__dirname + '/templates/case.html');
+//   });
 
-  app.get('/filing', (req, res) => {
-    res.sendFile(__dirname + '/templates/filing.html');
-  });
+//   app.get('/filing', (req, res) => {
+//     res.sendFile(__dirname + '/templates/filing.html');
+//   });
 
-  app.get('/location', (req, res) => {
-    res.sendFile(__dirname + '/templates/location.html');
-  });
+//   app.get('/location', (req, res) => {
+//     res.sendFile(__dirname + '/templates/location.html');
+//   });
 
-  
-  app.get('/c1', (req, res) => {
-    res.sendFile(__dirname + '/templates/c1.html');
-  });
+//   app.get('/c1', (req, res) => {
+//     res.sendFile(__dirname + '/templates/c1.html');
+//   });
 
-  app.get('/party', (req, res) => {
-    res.sendFile(__dirname + '/templates/party.html');
-  });
+//   app.get('/party', (req, res) => {
+//     res.sendFile(__dirname + '/templates/party.html');
+//   });
 
-  app.get('/status', (req, res) => {
-    res.sendFile(__dirname + '/templates/status.html');
-  });
+//   app.get('/status', (req, res) => {
+//     res.sendFile(__dirname + '/templates/status.html');
+//   });
 
   
 

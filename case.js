@@ -1,12 +1,12 @@
 
-function change_inner_content(m, t) {
+function change_inner_contentf(m, t) {
     let main = document.getElementById("search_result")
     let divs = document.getElementById('search_nav').getElementsByTagName('div')
     for (let i = 0; i < divs.length; i++)
         divs[i].setAttribute('class', 'x')
     if (m == 1) {
         main.innerHTML = `
-        <p>Case status:search by party name</p><br>
+        <p>Case status:search by party name</p>
                     <p> </p>
                     <div>
                         <p>Party Name</p>
@@ -76,7 +76,7 @@ async function get_pdetails() {
 
     div.innerHTML = `<div>
     <h3 onclick="document.getElementById('party').remove()">Party Details</h3>
-    <table id='party_table'>
+    <table id='party_table' class="table table-dark" >
     <tr>
     <th>PartyID</th>
     <th>Party Name</th>
@@ -121,7 +121,7 @@ async function get_cdetails() {
 
     div.innerHTML =  `<div>
     <h3 onclick="document.getElementById('case').remove()">Case Details</h3>
-    <table id='case_table'>
+    <table id='case_table' class="table table-dark" >
     <tr>
     <th>CaseID</th>
     <th>Case number</th>
@@ -164,7 +164,7 @@ async function get_courtdetails() {
 
     div.innerHTML =  `<div>
     <h3 onclick="document.getElementById('court').remove()">X</h3>
-    <table id='court_table'>
+    <table id='court_table' class="table table-dark" >
     <tr>
     <th>PartyID</th>
     <th>CaseNumber</th>
@@ -207,8 +207,9 @@ async function get_ldetails() {
     div.id='lawyer'
 
     div.innerHTML = `<div>
-    <h3 onclick="document.getElementById('case').remove()">Lawyer Details</h3>
-    <table id='lawyer_table'>
+    <h3 onclick="document.getElementById('lawyer').remove()">Lawyer Details</h3>
+     
+    <table id='lawyer_table' class="table table-dark" >
     <tr>
     <th>LawyerID</th>
     <th>Name</th>

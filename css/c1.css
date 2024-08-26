@@ -248,3 +248,71 @@
     color: white;
     border: 1px;
 }
+
+
+#party {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.548);
+    backdrop-filter: blur(5px);
+}
+
+#party div{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+#case{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.548);
+    backdrop-filter: blur(5px);
+}
+#case div{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+#court{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.548);
+    backdrop-filter: blur(5px);
+}
+#court div{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+#lawyer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.548);
+    backdrop-filter: blur(5px);
+}
+#lawyer div{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}

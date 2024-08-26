@@ -14,26 +14,15 @@ async function get_lodetails() {
 
     div.innerHTML = `<div>
     <h3 onclick="document.getElementById('havgolla').remove()">Court Details</h3>
-    <table id='havgolla_table'>
+    <table id='havgolla_table' class="table table-dark" >
     
     </table>
     </div>`
     document.body.append(div)
-    // let data=res.data
-    // let table=document.getElementById('havgolla_table')
-    // for(let i of data){
-    //     let tr=document.createElement('tr')
-    //     tr.innerHTML=`
-    // <th>${i.CourtID}</th>
-    // <th>${i.CourtName}</th>
-    // <th>${i.ContactDetails}</th>
-    // `
-    // table.append(tr)
-    // }
-
+   
     const arr = res.data
             
-    const tableElement = document.getElementById('json-table');
+    const tableElement = document.getElementById('havgolla_table');
     const keys = Object.keys(arr[0]);
     
     // Create table header

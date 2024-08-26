@@ -1,9 +1,3 @@
-function navigate(m){
-    if(m==11)window.location='//templates//p1.html'
-    if(m==12)window.location='//templates//case.html'
-    if(m==9)return
-    if(m==15)window.location='//location.html'
-    }
 function change_inner_content(m, t) {
     let main = document.getElementById("search_result")
     let divs = document.getElementById('search_nav').getElementsByTagName('div')
@@ -18,14 +12,11 @@ function change_inner_content(m, t) {
                         <p>capcha <br>
                         <input type="text">
                         </p>
-                        
                         <button onclick="get_c1details()">GO</button>
                         <button>Reset</button>
                        
-                    </div>
+                    </div>          
             
-            
-
         </div>`
         t.className = 'seleccted_c1'
     }
@@ -42,6 +33,7 @@ function change_inner_content(m, t) {
                     </div>`
         t.className = 'seleccted_c1'
     }
+    
     if (m == 3) {
         main.innerHTML = `<div>
                         <p>Court Orders</p>
@@ -83,35 +75,36 @@ async function get_c1details() {
     div.id='c1'
 
     div.innerHTML =  `<div>
-    <h3 onclick="document.getElementById('c1').remove()">X</h3>
-    <table id='c1_table'>
-    <tr>
-    <th>PartyID</th>
-    <th>CaseNumber</th>
-    <th>CourtID</th>
-    <th>LawyerName</th>
-    <th>Role</th>
-    <th>ContactDetails</th>
-    <th>Address</th>
-    </tr>
+    
+    <h3 onclick="document.getElementById('c1').remove();">Case Details</h3>
+    <table id='c1_table' class="table table-dark" >
+    
     </table>
     </div>`
     document.body.append(div)
-    let data=res.data
-    let table1=document.getElementById('c1_table')
-    for(let i of data){
-        let tr=document.createElement('tr')
-        tr.innerHTML=`
-        <th>${i.PartyID}</th>
-        <th>${i.CaseNumber}</th>
-    <th>${i.CourtID}</th>
-    <th>${i.Name}</th>
-    <th>${i.Role}</th>
-    <th>${i.ContactDetails}</th>
-    <th>${i.Address}</th>`
-    table1.append(tr)
-    }
+    let arr=res.data
+    const tableElement = document.getElementById('c1_table');
+    const keys = Object.keys(arr[0]);
+    
+    // Create table header
+    const headerRow = tableElement.insertRow();
+    keys.forEach(key => {
+        const th = document.createElement('th');
+        th.textContent = key;
+        headerRow.appendChild(th);
+    });
+    
+    // Create table rows
+    arr.forEach(item => {
+        const row = tableElement.insertRow();
+        keys.forEach(key => {
+            const cell = row.insertCell();
+            cell.textContent = item[key];
+        });
+    });
+
 }
+
 async function get_c2details() {
     let c2 = document.getElementById('cino7').value
     let res = await fetch('/get_c2_details', {
@@ -128,32 +121,31 @@ async function get_c2details() {
 
     div.innerHTML =  `<div>
     <h3 onclick="document.getElementById('case').remove()">Case Details</h3>
-    <table id='case_table'>
-    <tr>
-    <th>CaseID</th>
-    <th>Case number</th>
-    <th>Status</th>
-    <th>Court ID</th>
-    <th>Case type</th>
-    <th>Filling details</th>
-    </tr>
+    <table id='case_table' class="table table-dark" >
+    
     </table>
     </div>`
     document.body.append(div)
-    let data=res.data
-    let table=document.getElementById('case_table')
-    for(let i of data){
-        let tr=document.createElement('tr')
-        tr.innerHTML=`
-        <th>${i.CaseID}</th>
-    <th>${i.CaseNumber}</th>
-    <th>${i.Status}</th>
-    <th>${i.CourtID}</th>
-    <th>${i.CaseDetails}</th>
-    <th>${i.FilingDate}</th>
-    `
-    table.append(tr)
-    }
+    let arr=res.data
+    const tableElement = document.getElementById('case_table');
+    const keys = Object.keys(arr[0]);
+    
+    // Create table header
+    const headerRow = tableElement.insertRow();
+    keys.forEach(key => {
+        const th = document.createElement('th');
+        th.textContent = key;
+        headerRow.appendChild(th);
+    });
+    
+    // Create table rows
+    arr.forEach(item => {
+        const row = tableElement.insertRow();
+        keys.forEach(key => {
+            const cell = row.insertCell();
+            cell.textContent = item[key];
+        });
+    });
 }
 async function get_c3details() {
     let c3 = document.getElementById('cino8').value
@@ -171,7 +163,7 @@ async function get_c3details() {
 
     div.innerHTML =  `<div>
     <h3 onclick="document.getElementById('case1').remove()">Case Details</h3>
-    <table id='case1_table'>
+    <table id='case1_table' class="table table-dark">
     <tr>
     <th>CourtID</th>
     <th>Court Name</th>
@@ -214,7 +206,7 @@ async function get_c4details() {
 
     div.innerHTML =  `<div>
     <h3 onclick="document.getElementById('case2').remove()">Case Details</h3>
-    <table id='case2_table'>
+    <table id='case2_table' class="table table-dark">
     <tr>
     <th>Order Date</th>
     </tr>

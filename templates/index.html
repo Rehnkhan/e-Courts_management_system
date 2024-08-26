@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/p1.css">
     <link rel="stylesheet"  type="text/css" href="css//c1.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/footers/">
+    <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    
 </head>
 
 <body>
+
+
+    
     <div id="navbar">
         <p> </p>
         <img src="images/Screenshot 2024-02-06 192442.png" alt="eCourt India Services" height="70px" width="300px" />
@@ -37,25 +45,26 @@
             <p id="sm">Search Menu</p>
             <div><img src="images/Screenshot 2024-02-06 203153.png" alt="">
                 <!-- <p onclick="navigate(11)">CNR number</p> -->
-                <a href="#"> CNR number</a>
+                <!-- <a href="#"> CNR number</a> -->
                 <p onclick="CNR()">CNR number</p>
             </div>
             <div><img src="images/Screenshot 2024-02-06 203134.png" alt="">
                 <!-- <p onclick="navigate(12)">Case status</p> -->
-                <a href="/case">Case status</a>
+                <!-- <a href="/case">Case status</a> -->
                 <p onclick="status()">Case status</p>
                 
             </div>
             <div><img src="images/Screenshot 2024-02-06 203056.png" alt="">
                 <!-- <p onclick="navigate(9)">Court orders</p> -->
-                <a href="/c1"> Court orders</a>
+                <!-- <a href="/c1"> Court orders</a> -->
                 <p onclick="orders()">Court orders</p>
             </div>
             <div> <img src="images/OIP.jpg" alt="">
                 <!-- <p onclick="navigate(15)">Location</p> -->
-                <a onclick="location()"> Location</a>
-            </div>
-            
+
+                <p onclick="locations()">Location</p>
+                
+            </div>            
         </div>
         <div id="maincontent">
             <div class="box">
@@ -144,26 +153,26 @@
                         <input type="text" placeholder="Enter the CNR number" 
                             name="cino" id="cino" maxlength="16" required>
                         <button onclick="get_details()">Search</button>
+                       
+                          
                         <button id="reset" >Reset</button>
                     </div>
-                    <div id="contentasdf">
-                      <!-- Component will be loaded here -->
-                       <button onclick="oncls()"></button>
-                  </div>
+                    
+                </div>
+                <div id="help">
+                    <p class="heplpdesk">Help Desk</p>
+                    <div>
+                        <p>Enter at least 3 characters</p>
+                        <p>Party Name maybe the name of the Petitioner, Plaintiff, Complainant, Respondent, Defendant,
+                            Appellant, Accused or Extra Party.
+                        </p>
+                        <p>In the Year box, enter the Case Registration Year.</p>
+                        <p>Click on the Go button, to get the Oders/Judgements of the cases satisfying the search criteria.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div id="help">
-                <p class="heplpdesk">Help Desk</p>
-                <div>
-                    <p>Enter at least 3 characters</p>
-                    <p>Party Name maybe the name of the Petitioner, Plaintiff, Complainant, Respondent, Defendant,
-                        Appellant, Accused or Extra Party.
-                    </p>
-                    <p>In the Year box, enter the Case Registration Year.</p>
-                    <p>Click on the Go button, to get the Oders/Judgements of the cases satisfying the search criteria.
-                    </p>
-                </div>
-            </div>
+            
         </div>
     </div>
 
@@ -172,9 +181,69 @@
     <div id="footer">
 
     </div>
-    <footer>
-        
-    </footer>
+    
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2022 eCommittee rk Court of India. All Rights Reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+          
+        </footer>
+      
+      
+      
+          <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
 
 
 
@@ -185,6 +254,7 @@
     <script type="application/javascript" src="/location.js"></script>
     <script type="application/javascript" src="/c1.js"></script>
     <script type="application/javascript" src="/displayfunc.js"></script>
+    <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
     
 </body>
 
