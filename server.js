@@ -54,7 +54,7 @@ app.post('/login',image.single('pic'),async (req,res)=>{
 })
 
 app.get('/p',(req,res)=>{
-    res.sendFile(__dirname+'/templates/index.html')
+    res.sendFile(__dirname+'/temp/index.html')
 })
 
 // app.get('/case', (req, res) => {
