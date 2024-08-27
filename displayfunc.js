@@ -1,7 +1,7 @@
 // to display status html
 function status(){
 
-    fetch('/temp/casef.html')
+    fetch('/templates/casef.html')
       .then(response => response.text())
       .then(html => {
           document.getElementById('showcontent').innerHTML = html;
@@ -13,7 +13,7 @@ function status(){
 
   // to display cnr html
 function CNR(){
-    fetch('/temp/p1f.html')
+    fetch('/templates/p1f.html')
     .then(response => response.text())
     .then(html => {
         document.getElementById('showcontent').innerHTML = html;
@@ -25,7 +25,7 @@ function CNR(){
 
   // to display orders html
 function orders(){
-fetch('/temp/c1f.html')
+fetch('/templates/c1f.html')
       .then(response => response.text())
       .then(html => {
           document.getElementById('showcontent').innerHTML = html;
@@ -38,7 +38,7 @@ fetch('/temp/c1f.html')
 // to display location html
 
 function locations(){
-  fetch('/temp/locationf.html')
+  fetch('/templates/locationf.html')
       .then(response => response.text())
       .then(html => {
           document.getElementById('showcontent').innerHTML = html;

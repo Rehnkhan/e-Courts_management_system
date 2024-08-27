@@ -30,31 +30,31 @@ app.use(ex.urlencoded({extended:true}))
 app.use(ex.json())
 app.use(bodyParser.json({limit:'50mb'}))
 app.use(ex.static(__dirname))
-app.get('/p1',(req,res)=>{
-    res.sendFile(`${__dirname}/templates/p1.html`)
-})
+// app.get('/p1',(req,res)=>{
+//     res.sendFile(`${__dirname}/templates/p1.html`)
+// })
 
-app.post('/login',image.single('pic'),async (req,res)=>{
-    let result=await querydatabase('select max(court_id) as max from court')
-    let a='dhcsac'
-    let b=Buffer.from(a,'base64')
-    fs.writeFileSync('./images/hdsc.png',b)
-    let max=result.result[0].max
-    let pic={pic:fs.readFileSync(`./images/${req.file.filename}`).toString('base64'),name:`${req.file.filename}`}
+// app.post('/login',image.single('pic'),async (req,res)=>{
+//     let result=await querydatabase('select max(court_id) as max from court')
+//     let a='dhcsac'
+//     let b=Buffer.from(a,'base64')
+//     fs.writeFileSync('./images/hdsc.png',b)
+//     let max=result.result[0].max
+//     let pic={pic:fs.readFileSync(`./images/${req.file.filename}`).toString('base64'),name:`${req.file.filename}`}
 
-     result= await querydatabase('insert into court values(?,?,?,?,?,?)',[++max,req.body.name,req.body.location,JSON.stringify({
-        ph:req.body.ph,email:req.body.email
-     }),JSON.stringify({day:12,year:2004,month:3}),JSON.stringify(pic)])
-     fs.unlinkSync(`./images/${req.file.filename}`)
-    if(result.status=='err'){
-        res.send('err')
-        return
-    }
-    res.send('success')
-})
+//      result= await querydatabase('insert into court values(?,?,?,?,?,?)',[++max,req.body.name,req.body.location,JSON.stringify({
+//         ph:req.body.ph,email:req.body.email
+//      }),JSON.stringify({day:12,year:2004,month:3}),JSON.stringify(pic)])
+//      fs.unlinkSync(`./images/${req.file.filename}`)
+//     if(result.status=='err'){
+//         res.send('err')
+//         return
+//     }
+//     res.send('success')
+// })
 
 app.get('/p',(req,res)=>{
-    res.sendFile(__dirname+'/temp/index.html')
+    res.sendFile(__dirname+'/templates/index.html')
 })
 
 // app.get('/case', (req, res) => {
