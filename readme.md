@@ -20,17 +20,13 @@ The eCourts Management System is a project aimed at digitalizing and automating 
    ```
    git clone https://github.com/Rehnkhan/e-Courts_management_system.git
 
-```
-
 2. In your terminal 
-```
-cd e-Courts_management_system 
-```
+    ```
+    cd e-Courts_management_system 
 
 3. Install dependencies
-```
-npm install
-```
+    ```
+    npm install
 
 4. Database Setup
 
@@ -41,8 +37,8 @@ Create a new database named ecourtf.sql.
 Import the provided database file (ecourtf.sql) into the newly created database.
 Update the database connection details in server.js (host, username, password, database name).
 
-5. Start the server
+5. Start the server In your terminal 
 ```
 nodemon server.js
-```
+
 
